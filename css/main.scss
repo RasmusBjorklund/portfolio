@@ -135,7 +135,7 @@ h1 {
 }
 
 #about .col-md-6 {
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 // ==========================
 //  NAV
@@ -332,6 +332,9 @@ footer .social-link {
     font-size: 3.5rem;
     line-height: 3rem;
   }
+  nav .social-link {
+    width: 1rem;
+  }
 }
 @media only screen and (max-width: 580px) {
   nav li {
@@ -361,5 +364,8 @@ footer .social-link {
   h2 {
     font-size: 2rem;
     line-height: 2.75rem;
+  }
+  nav .social-link {
+    width: .5rem;
   }
 }
