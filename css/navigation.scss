@@ -1,0 +1,46 @@
+$primary-color: #212D40 !important; //Blue
+$secondary-color: #ff612e !important; //Orange
+
+/* Navigation Settings */
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 24px 10px;
+  .active {
+    color: $secondary-color;
+  }
+}
+
+nav li a {
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.active {
+  color: $primary-color;
+}
+
+.nav-link {
+  padding: 0 !important;
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 2;
+}

@@ -1,0 +1,95 @@
+$primary-color: #212D40 !important; //Blue
+$secondary-color: #ff612e !important; //Orange
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arvo', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 8rem;
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+#hero h2,
+h1 {
+  text-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+  display: inline-block;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+
+.bg-primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: white;
+}
+
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: #f23b00 !important;
+  }
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.badge-primary {
+  padding: 1em;
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: #f23b00 !important;
+  }
+}

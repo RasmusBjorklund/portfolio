@@ -1,0 +1,116 @@
+body{
+  font-family: 'Muli';
+  margin: 0;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 5.5rem;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.text-primary {
+  color: #ff612e !important;
+}
+
+.btn-primary{
+  background-color: #ff612e !important;
+}
+
+#hero {
+  background-image: url('../img/header-image.jpeg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-text {
+  padding: 20% 2%;
+  text-align: center;
+}
+
+.navbar a{
+  transition: 0.5s ease;
+  color: white;
+}
+
+.scrolled a {
+  color: black;
+}
+
+.scrolled a:hover, .navbar a:hover {
+  color: ;
+}
+
+.bg-orange {
+  background-color: #ff612e;
+  color: white;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  top: 25%;
+}
+
+.slide {
+  opacity: 0;
+}
+
+.vertical-hr {
+  border: none;
+  border-left: 1px solid black;
+  height: 50vh;
+  width: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70vw;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.social-button a{
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  background-color: #ff612e;
+  color: #fff!important;
+  border-radius: 100% !important;
+  text-align: center;
+  font-size: 7rem;
+  margin: 0.2em;
+  -webkit-transition:all .3s;
+  transition:all .3s
+}
+
+.social-button a:hover{
+  background-color: #f23b00 ;
+}
