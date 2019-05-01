@@ -27,6 +27,10 @@ $(window).ready(function($) {
     separator: ',',
     speed: 3000
   });
+
+  $('.card').hover(function () {
+    $('.card-img-overlay', this).toggleClass('hidden').animate('slow');
+  })
 });
 
 $(window).bind('scroll', function() {

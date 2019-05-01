@@ -19,6 +19,7 @@
 
 $primary-color: #212D40 !important; //Blue
 $secondary-color: #ff612e !important; //Orange
+
 // ==========================
 //  GENERAL
 // ==========================
@@ -65,6 +66,11 @@ h1 {
 h2 {
   font-size: 5rem;
   line-height: 5.5rem;
+}
+
+h3 {
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.2);
 }
 
 #hero h2,
@@ -114,8 +120,8 @@ h1 {
 
 .badge-primary {
   padding: 1em;
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 
   &:hover {
     background-color: #f23b00 !important;
@@ -137,10 +143,36 @@ h1 {
 #about .col-md-6 {
   min-height: 100vh;
 }
+
+.about-bg {
+  background-image: url('../img/about-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card {
+  border: 0 !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-text {
+  z-index: 3;
+}
+
+// ==========================
+//  END ABOUT
+// ==========================
+
 // ==========================
 //  NAV
 // ==========================
-/* Navigation Settings */
 
 nav {
   position: absolute;
@@ -204,6 +236,17 @@ nav .social-link {
 
 }
 
+// ==========================
+//  END NAV
+// ==========================
+
+// ==========================
+//  PORTFOLIO
+// ==========================
+
+// ==========================
+//  END Portfolio
+// ==========================
 
 // ==========================
 //   FOOTER
@@ -235,82 +278,10 @@ footer .social-link {
 // ==========================
 //  END FOOTER
 // ==========================
-// ==========================
-//  PORTFOLIO
-// ==========================
 
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-
-  .caption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(25, 36, 62, 0.2);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-
-  .caption-content {
-    color: #fff;
-    margin: auto 2rem 2rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-weight: 300;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-
-    .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
-      clip-path: inset(0px);
-    }
-
-    .caption-content {
-      -webkit-transition: opacity 0.25s;
-      transition: opacity 0.25s;
-      margin-left: 5rem;
-      margin-right: 5rem;
-      margin-bottom: 5rem;
-    }
-  }
-
-  img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-
-    &:hover {
-      img {
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
-      }
-
-      .caption {
-        background-color: rgba(25, 36, 62, 0.9);
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
-      }
-    }
+@media (max-width: 992px) {
+  .hidden {
+    visibility: visible;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -335,7 +306,11 @@ footer .social-link {
   nav .social-link {
     width: 1rem;
   }
+  .hidden {
+    visibility: visible;
+  }
 }
+
 @media only screen and (max-width: 580px) {
   nav li {
     padding: 24px 4px;
@@ -354,7 +329,11 @@ footer .social-link {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
+  .hidden {
+    visibility: visible;
+  }
 }
+
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 3rem;
@@ -367,5 +346,8 @@ footer .social-link {
   }
   nav .social-link {
     width: .5rem;
+  }
+  .hidden {
+    visibility: visible;
   }
 }
